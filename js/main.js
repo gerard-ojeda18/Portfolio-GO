@@ -49,6 +49,7 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
+/*
 // Animación de barras de progreso
 const progressObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -68,7 +69,7 @@ const progressObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.learning-card').forEach(card => {
     progressObserver.observe(card);
 });
-
+*/
 // Destacar el link activo en la navegación
 const sections = document.querySelectorAll('section[id]');
 const navLinksAll = document.querySelectorAll('.nav-links a');
@@ -97,7 +98,7 @@ const skillCards = document.querySelectorAll('.skill-card');
 skillCards.forEach((card, index) => {
     card.style.animationDelay = `${index * 0.1}s`;
 });
-
+/*
 // Contador animado para las barras de progreso (opcional)
 function animateValue(element, start, end, duration) {
     let startTimestamp = null;
@@ -131,7 +132,7 @@ const progressCounterObserver = new IntersectionObserver((entries) => {
 progressLabels.forEach(label => {
     progressCounterObserver.observe(label);
 });
-
+*/
 // Efecto parallax suave en el hero
 window.addEventListener('scroll', () => {
     const scrolled = window.scrollY;
